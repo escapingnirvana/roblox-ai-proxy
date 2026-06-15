@@ -17,7 +17,7 @@ app.post("/judge", async (req, res) => {
 
   try {
     const completion = await openai.chat.completions.create({
-      model: "gpt-5.4-nano", // cheap and fast
+      model: "gpt-4o-mini",
       max_tokens: 150,
       messages: [
         {
